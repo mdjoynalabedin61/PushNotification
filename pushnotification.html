@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>An Example PWA</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="push.js"></script>
+  <script src="push.min.js"></script>
+  <script src="serviceWorker.min.js"></script>
+  <script src="serviceWorker.js"></script>
+</head>
+<body>
+<a href="javascript:void(0)" onclick="start()">Start button</a>
+<script>
+function start(){
+    Push.create('Hello World!')
+    console.log("Working")
+}
+</script>
+</body>
+</html>
